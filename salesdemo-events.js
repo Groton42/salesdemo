@@ -77,7 +77,27 @@ var salesdemo_events = [
 	  "details": "Alert Details and Links",
 	  "event_type": "trigger",
 	  "incident_key": "rSYS-4-CONFIG_RESOLVE_FAILURE",
-	  "service_key": "8741e62dd6a4415293c767e2d2be0532"
+	  "service_key": "4db8355fb1b04fa794f0ec19c9b7c612"
+	},
+	{
+	  "contexts": [
+	    {
+	      "text": "View Runbook",
+	      "href": "http://pdt-madmen.pagerduty.com",
+	      "type": "link"
+	    },
+	    {
+	      "src": "https://p.datadoghq.com/snapshot/view/dd-snapshots-prod/org_1804/2016-01-08/2a82598cc2d67f28542eb218f1094db70657b139.png",
+	      "alt": "Snapshot of metric",
+	      "href": "https://appp.datadoghq.com/monitors#72563?to_ts=1452282540000&group=host%3Aprod-web-xdb09&from_ts=1452281340000",
+	      "type": "image"
+	    }
+	  ],
+	  "description": "(WARN)build failed: r2d2.production.widegetbuilder.com:8080",
+	  "details": "Alert Details and Links",
+	  "event_type": "trigger",
+	  "incident_key": "(WARN)build failed: r2d2.production.widegetbuilder.com:8080",
+	  "service_key": "5dd3878d64bf46c28c5c9cbbd03a1381"
 	},
 	{
 	  "contexts": [
@@ -99,4 +119,4 @@ var salesdemo_events = [
 	  "incident_key": "Long history length in xdb (possible stuck transaction)",
 	  "service_key": "c009c419ea044085bf32d552b099028c"
 	}
-]
+];
