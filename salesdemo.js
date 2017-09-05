@@ -5,7 +5,7 @@ function PDEvent(options) {
 	$.ajax($.extend({}, {
 		type: "POST",
 		dataType: "json",
-		url: "https://events.pagerduty.com/generic/2010-04-15/create_event.json",
+		url: "https://events.pagerduty.com/v2/enqueue",
 	},
 	options));
 
@@ -20,7 +20,7 @@ function main() {
 				},
 				data: JSON.stringify(event)
 			}
-			PDEvent(options);
+			setTimeout(PDEvent(options), 3000);
 		});	
 	});
 }
