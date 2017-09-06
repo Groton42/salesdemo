@@ -16,7 +16,7 @@ function main() {
 		salesdemo_events.forEach(function(event) {
 			var options = {
 				success: function() {
-					$('#trigger-result').append("KEvent '" + event.payload.summary + "' sent to " + event.routing_key + "<br>");
+					$('#trigger-result').append("KEvent '" + event.dedup_key + "' sent to " + event.routing_key + "<br>");
 				},
 				data: JSON.stringify(event)
 			}
