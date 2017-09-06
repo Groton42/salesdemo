@@ -20,7 +20,7 @@ function main() {
 				},
 				data: JSON.stringify(event)
 			}
-			setTimeout(PDEvent(options), 3000);
+			PDEvent(options);
 		});	
 	});
 }
