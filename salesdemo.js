@@ -13,6 +13,7 @@ function PDEvent(options) {
 
 function main() {
 	$('#trigger-send-button').click(function() {
+		var i = 0;
 		salesdemo_events.forEach(function(event) {
 			var options = {
 				success: function() {
@@ -20,7 +21,8 @@ function main() {
 				},
 				data: JSON.stringify(event)
 			}
-			PDEvent(options);
+			setTimeout(function() { PDEvent(options); }, i * 2000 );
+			i++;
 		});	
 	});
 }
